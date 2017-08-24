@@ -1,5 +1,9 @@
 <div class="video">
     <div>
-        <iframe src="http://www.youtube.com/embed/{{ include.code }}?color=white&theme=light"></iframe>
+        <a href="https://www.youtube.com/watch?v={{ include.code }}">
+            <img src="https://img.youtube.com/vi/{{ include.code }}/maxresdefault.jpg"/>
+            <img class="play" src="{{ site.baseurl }}/assets/img/play.png"/>
+            <img class="play_hover" src="{{ site.baseurl }}/assets/img/play_hover.png"/>
+        </a>
     </div>
 </div>
