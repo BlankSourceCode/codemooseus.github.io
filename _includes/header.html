@@ -1,0 +1,31 @@
+<div class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <img class="logo" src="{{ site.favicon | prepend: site.baseurl }}" title="{{ site.title }}" alt="{{ site.title }}">
+                <h4>{{ site.title }}</h4>
+                <p>{{ site.tagline }}</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+            </div>
+        </div>        
+        <div class="row nav">
+            <div class="col-xs-1">
+                {% assign link = page.url | truncate: 5, "" %}
+                <a href="{{ site.baseurl }}/" {% if link == '/page' or page.url == '/'  %}class="nav-selected"{% endif %}>Home</a> 
+            </div>
+            <div class="col-xs-1">
+                <a href="{{ site.baseurl }}/topics/" {% if page.url == '/topics/' %}class="nav-selected"{% endif %}>Topics</a> 
+            </div>
+            <div class="col-xs-1">
+                <a href="{{ site.baseurl }}/about/" {% if page.url == '/about/' %}class="nav-selected"{% endif %}>About Me</a> 
+            </div>
+        </div>
+        <div class="row banner-row">
+            <div class="col-xs-12 col-md-12">
+                <img class="banner" src="{{ site.baseurl }}/assets/img/banner.png"/>
+            </div>
+        </div>
+    </div>
+</div>

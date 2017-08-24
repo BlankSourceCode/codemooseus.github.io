@@ -1,0 +1,40 @@
+# Site settings
+title: CodeMoose.NET
+tagline: Random adventures in coding
+description: Hello
+favicon: /assets/img/logo.png
+baseurl:
+paginate: 5
+
+# Build settings
+markdown: kramdown
+exclude: [vendor]
+
+# Author settings
+author:
+  name: CodeMoose
+  title: Software Developer
+  address: Seattle, WA
+  email: support
+  twitter: CodeMoose
+  youtube: UCS8uSCH2OeCOLKKWfA-0Ihw
+  github: CodeMooseUS
+  programmingSkills:
+    - skill1:
+      name: C#
+      percentage: 100%
+    - skill2:
+      name: C++
+      percentage: 80%
+    - skill3:
+      name: JavaScript
+      percentage: 100%
+    - skill4:
+      name: TypeScript
+      percentage: 90%
+    - skill5:
+      name: Pixel Art
+      percentage: 60%
+    - skill6:
+      name: Vector Art
+      percentage: 60%
