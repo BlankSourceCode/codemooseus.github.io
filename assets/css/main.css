@@ -320,6 +320,20 @@ hr {
     margin-left: 2px;
     font-size: 18pt;
 }
+
+.timeline p, .timeline a {
+    overflow-wrap: break-word;
+}
+
+@media all and (max-width: 600px) {
+    .timeline > li {
+        margin-left: 0;
+    }
+
+    .timeline > li > .timeline-badge {
+        display: none;
+    }
+}
     
 
 .timeline > li.timeline-inverted > .timeline-panel:before {
